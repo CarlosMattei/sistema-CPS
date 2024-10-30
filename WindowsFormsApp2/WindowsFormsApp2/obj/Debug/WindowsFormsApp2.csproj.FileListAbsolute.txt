@@ -8,3 +8,17 @@ C:\Users\Aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsF
 C:\Users\Aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\logan\Source\Repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Forms.FormChamados.resources
+C:\Users\logan\source\repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Forms.FormHistorico.resources
+C:\Users\logan\source\repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Forms.FormSair.resources
+C:\Users\logan\source\repos\sistema-CPS\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Forms.Home.resources

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +53,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormChamados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChamados.Designer.cs">
+      <DependentUpon>FormChamados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHistorico.Designer.cs">
+      <DependentUpon>FormHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSair.Designer.cs">
+      <DependentUpon>FormSair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChamados.resx">
+      <DependentUpon>FormChamados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHistorico.resx">
+      <DependentUpon>FormHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSair.resx">
+      <DependentUpon>FormSair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
