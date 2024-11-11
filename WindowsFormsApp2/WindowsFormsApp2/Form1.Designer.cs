@@ -51,10 +51,10 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(4);
-            this.panel1.Size = new System.Drawing.Size(289, 562);
+            this.panel1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.panel1.Size = new System.Drawing.Size(217, 457);
             this.panel1.TabIndex = 0;
             // 
             // btnSair
@@ -62,10 +62,10 @@
             this.btnSair.BackColor = System.Drawing.Color.Maroon;
             this.btnSair.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(4, 489);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSair.Location = new System.Drawing.Point(3, 398);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(281, 69);
+            this.btnSair.Size = new System.Drawing.Size(211, 56);
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -76,11 +76,11 @@
             this.btnHistorico.BackColor = System.Drawing.Color.Black;
             this.btnHistorico.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHistorico.ForeColor = System.Drawing.Color.White;
-            this.btnHistorico.Location = new System.Drawing.Point(4, 166);
-            this.btnHistorico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHistorico.Location = new System.Drawing.Point(3, 134);
+            this.btnHistorico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHistorico.Name = "btnHistorico";
-            this.btnHistorico.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btnHistorico.Size = new System.Drawing.Size(281, 58);
+            this.btnHistorico.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnHistorico.Size = new System.Drawing.Size(211, 47);
             this.btnHistorico.TabIndex = 3;
             this.btnHistorico.Text = "Histórico";
             this.btnHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,11 +92,11 @@
             this.btnChamados.BackColor = System.Drawing.Color.Black;
             this.btnChamados.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChamados.ForeColor = System.Drawing.Color.White;
-            this.btnChamados.Location = new System.Drawing.Point(4, 108);
-            this.btnChamados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChamados.Location = new System.Drawing.Point(3, 87);
+            this.btnChamados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnChamados.Name = "btnChamados";
-            this.btnChamados.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btnChamados.Size = new System.Drawing.Size(281, 58);
+            this.btnChamados.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnChamados.Size = new System.Drawing.Size(211, 47);
             this.btnChamados.TabIndex = 2;
             this.btnChamados.Text = "Chamados";
             this.btnChamados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,11 +108,11 @@
             this.btninicio.BackColor = System.Drawing.Color.Black;
             this.btninicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninicio.ForeColor = System.Drawing.Color.White;
-            this.btninicio.Location = new System.Drawing.Point(4, 50);
-            this.btninicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btninicio.Location = new System.Drawing.Point(3, 40);
+            this.btninicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btninicio.Name = "btninicio";
-            this.btninicio.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btninicio.Size = new System.Drawing.Size(281, 58);
+            this.btninicio.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btninicio.Size = new System.Drawing.Size(211, 47);
             this.btninicio.TabIndex = 1;
             this.btninicio.Text = "Início";
             this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,10 +123,10 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(281, 46);
+            this.panel2.Size = new System.Drawing.Size(211, 37);
             this.panel2.TabIndex = 0;
             // 
             // panel3
@@ -136,11 +136,11 @@
             this.panel3.Controls.Add(this.lblInicio);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(289, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(217, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4);
-            this.panel3.Size = new System.Drawing.Size(1016, 50);
+            this.panel3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.panel3.Size = new System.Drawing.Size(762, 41);
             this.panel3.TabIndex = 1;
             // 
             // label1
@@ -148,9 +148,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(844, 14);
+            this.label1.Location = new System.Drawing.Point(633, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 29);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bem Vindo!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,9 +161,10 @@
             this.lblInicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(43, 14);
+            this.lblInicio.Location = new System.Drawing.Point(32, 11);
+            this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(70, 29);
+            this.lblInicio.Size = new System.Drawing.Size(54, 24);
             this.lblInicio.TabIndex = 0;
             this.lblInicio.Text = "Início";
             this.lblInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,20 +172,22 @@
             // panelDesktopView
             // 
             this.panelDesktopView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopView.Location = new System.Drawing.Point(289, 50);
+            this.panelDesktopView.Location = new System.Drawing.Point(217, 41);
+            this.panelDesktopView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDesktopView.Name = "panelDesktopView";
-            this.panelDesktopView.Size = new System.Drawing.Size(1016, 512);
+            this.panelDesktopView.Size = new System.Drawing.Size(762, 416);
             this.panelDesktopView.TabIndex = 2;
+            this.panelDesktopView.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktopView_Paint);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1305, 562);
+            this.ClientSize = new System.Drawing.Size(979, 457);
             this.Controls.Add(this.panelDesktopView);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

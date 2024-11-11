@@ -8,11 +8,41 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2.Forms;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+        MySqlConnection Conexao;
+
+        /*CONEXÂO COM BANCO SQL:
+         * 
+         * try{
+        string origem_data = "datasouce=localhost;username=root;password=;database=projetods4"
+        Conexao = new MySqlConnection(data_source);
+
+        string sql = "insert into chamados (id, data,local_solicitacao, maquina_afetada,descricao,nivel_chamado, responsavel_solicitacao)" + 
+        " values"+
+        "()"
+
+        MySqlCommand comando = newMySqlCommand(sql, Conexao)
+
+        Conexao.Open();
+
+        comando.ExecuteReader();
+
+        MessageBox.Show("Beleza")
+        } catch (Exception ex)
+        {
+        MessageBox.Show(ex.Message);
+        }finally
+        {
+        Conexao.Close();
+        }
+
+        */
+
         private Button currentButton;
         private Random random;
         private int tempIndex;
@@ -29,6 +59,8 @@ namespace WindowsFormsApp2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             OpenChildForm(new Forms.Home(), sender);
         }
 
@@ -68,6 +100,11 @@ namespace WindowsFormsApp2
         private void btninicio_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Home(), sender);
+        }
+
+        private void panelDesktopView_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
