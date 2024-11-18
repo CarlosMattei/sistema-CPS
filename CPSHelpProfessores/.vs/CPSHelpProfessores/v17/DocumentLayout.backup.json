@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|c:\\users\\aluno\\downloads\\cps_sistema\\cpshelpprofessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|c:\\users\\aluno\\downloads\\cps_sistema\\cpshelpprofessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|c:\\users\\aluno\\downloads\\cps_sistema\\cpshelpprofessores\\cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\forms\\sucessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\sucessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +43,68 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormNome.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\FormNome.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\FormNome.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:47:28.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormNome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\FormNome.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\FormNome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:46:53.939Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SucessForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs",
+              "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\SucessForm.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\SucessForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:46:59.385Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs",
+              "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\Home.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:46:58.479Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
+              "RelativeDocumentMoniker": "CPSHelpProfessores\\Form1.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
+              "RelativeToolTip": "CPSHelpProfessores\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA3wBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:45:33.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Form1.cs",
@@ -34,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Program.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Program.cs",
