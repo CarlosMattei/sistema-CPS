@@ -11,3 +11,16 @@ C:\Users\logan\source\repos\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSH
 C:\Users\logan\source\repos\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.FormNome.resources
 C:\Users\logan\source\repos\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.Home.resources
 C:\Users\logan\source\repos\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.SucessForm.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\bin\Debug\CPSHelpProfessores.exe.config
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\bin\Debug\CPSHelpProfessores.exe
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\bin\Debug\CPSHelpProfessores.pdb
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.csproj.AssemblyReference.cache
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Form1.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.FormNome.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.Home.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Forms.SucessForm.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.Properties.Resources.resources
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.csproj.GenerateResource.cache
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.exe
+C:\Users\Aluno\Downloads\cps_sistema\CPSHelpProfessores\CPSHelpProfessores\obj\Debug\CPSHelpProfessores.pdb

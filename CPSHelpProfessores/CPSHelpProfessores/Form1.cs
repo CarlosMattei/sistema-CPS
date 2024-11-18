@@ -76,5 +76,10 @@ namespace CPSHelpProfessores
             Principal.Controls.Add(nomeForm);
             nomeForm.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
