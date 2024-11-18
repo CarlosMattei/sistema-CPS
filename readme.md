@@ -1,6 +1,6 @@
 # CPSHelp
 
-![Descrição da imagem](https://ibb.co/MZnMFXd)
+![Descrição da imagem](https://freeimage.host/i/2RrBvtV)
 
 ## O que é?
 
