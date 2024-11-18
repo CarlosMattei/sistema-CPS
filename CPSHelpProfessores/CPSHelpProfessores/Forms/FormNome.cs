@@ -30,7 +30,7 @@ namespace CPSHelpProfessores.Forms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string txtLocal = comboBox1.Text;
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -54,33 +54,40 @@ namespace CPSHelpProfessores.Forms
             SucessForm success = new SucessForm();
             success.Show();
 
-            MySqlConnection Conexao;
+            MySqlConnection Conexao = null;
 
             try
             {
-                string origem_data = "datasouce=localhost;username=root;password=;database=projetods4"
+                string origem_data = "datasource=localhost;username=root;password=;database=projetods4";
                 Conexao = new MySqlConnection(origem_data);
 
-                string sql = "insert into chamados (nome,local_chamado, nivel_chamado, descricao)" +
-                "values " +
-                "('" + textBox1.Text + " ', ' " + comboBox1.Text + "', '" + comboBox2.Text + "', '" + richTextBox1.Text + "')";
-
+                string sql = "INSERT INTO chamados (nomeResponsavel, local, nivel, descricao) VALUES (@nomeResponsavel, @local, @nivel, @descricao)";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao);
 
+                // Adicionando parâmetros à consulta
+                comando.Parameters.AddWithValue("@nomeResponsavel", textBox1.Text);
+                comando.Parameters.AddWithValue("@local", comboBox1.Text);
+                comando.Parameters.AddWithValue("@nivel", comboBox2.Text);
+                comando.Parameters.AddWithValue("@descricao", richTextBox1.Text);
+
                 Conexao.Open();
+                comando.ExecuteNonQuery();
 
-                comando.ExecuteReader();
-
-                MessageBox.Show("Beleza");
-
-            } catch (Exception ex)
+                MessageBox.Show("Dados inseridos com sucesso!");
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Erro: " + ex.Message);
             }
             finally
             {
-                Conexao.Close();
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+                }
             }
+
+
 
             // Se você não tem um formulário específico para mostrar, você pode simplesmente deixar o painel vazio.
         }
@@ -93,7 +100,7 @@ namespace CPSHelpProfessores.Forms
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string txtGravidade = comboBox2.Text;
+            
         }
     }
 }
