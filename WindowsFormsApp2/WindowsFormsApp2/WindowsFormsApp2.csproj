@@ -111,6 +111,12 @@
     <Compile Include="Forms\FormChamados.Designer.cs">
       <DependentUpon>FormChamados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsulta.Designer.cs">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHistorico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormChamados.resx">
       <DependentUpon>FormChamados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConsulta.resx">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHistorico.resx">
       <DependentUpon>FormHistorico.cs</DependentUpon>

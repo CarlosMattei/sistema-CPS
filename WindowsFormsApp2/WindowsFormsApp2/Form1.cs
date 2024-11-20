@@ -102,9 +102,15 @@ namespace WindowsFormsApp2
             OpenChildForm(new Forms.Home(), sender);
         }
 
+
         private void panelDesktopView_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnConsulta_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormConsulta(), sender);
         }
     }
 }
