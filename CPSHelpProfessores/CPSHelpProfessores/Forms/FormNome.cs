@@ -42,9 +42,9 @@ namespace CPSHelpProfessores.Forms
         {
             
 
-            // Limpa o painel do Form1
+            
             _mainForm.Principal.Controls.Clear();
-            Form1 formInicial = new Form1(); // Supondo que você tenha um FormInicial
+            Form1 formInicial = new Form1(); 
             formInicial.TopLevel = false;
             formInicial.FormBorderStyle = FormBorderStyle.None;
             formInicial.Dock = DockStyle.Fill;
