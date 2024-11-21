@@ -46,13 +46,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prioridade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maquina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.problema = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.professor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.acoes = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.nomeResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -72,9 +69,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(242, 425);
+            this.panel1.Size = new System.Drawing.Size(323, 523);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -84,22 +81,22 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 72);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(0, 89);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Size = new System.Drawing.Size(242, 353);
+            this.panel3.Padding = new System.Windows.Forms.Padding(5);
+            this.panel3.Size = new System.Drawing.Size(323, 434);
             this.panel3.TabIndex = 1;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.button1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(4, 247);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Location = new System.Drawing.Point(5, 305);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel9.Size = new System.Drawing.Size(234, 81);
+            this.panel9.Padding = new System.Windows.Forms.Padding(5);
+            this.panel9.Size = new System.Drawing.Size(313, 100);
             this.panel9.TabIndex = 4;
             // 
             // button1
@@ -109,11 +106,11 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.button1.Size = new System.Drawing.Size(226, 52);
+            this.button1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.button1.Size = new System.Drawing.Size(303, 70);
             this.button1.TabIndex = 0;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;
@@ -124,11 +121,11 @@
             this.panel6.Controls.Add(this.comboBox2);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(4, 166);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(5, 205);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel6.Size = new System.Drawing.Size(234, 81);
+            this.panel6.Padding = new System.Windows.Forms.Padding(5);
+            this.panel6.Size = new System.Drawing.Size(313, 100);
             this.panel6.TabIndex = 3;
             // 
             // comboBox2
@@ -140,10 +137,10 @@
             "Baixo",
             "Médio",
             "Alto"});
-            this.comboBox2.Location = new System.Drawing.Point(4, 32);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Location = new System.Drawing.Point(5, 39);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(226, 28);
+            this.comboBox2.Size = new System.Drawing.Size(303, 33);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -151,11 +148,11 @@
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 4);
+            this.label4.Location = new System.Drawing.Point(5, 5);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.label4.Size = new System.Drawing.Size(226, 28);
+            this.label4.Padding = new System.Windows.Forms.Padding(5);
+            this.label4.Size = new System.Drawing.Size(303, 34);
             this.label4.TabIndex = 0;
             this.label4.Text = "Grávidade";
             // 
@@ -164,11 +161,11 @@
             this.panel5.Controls.Add(this.comboBox1);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(4, 85);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(5, 105);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel5.Size = new System.Drawing.Size(234, 81);
+            this.panel5.Padding = new System.Windows.Forms.Padding(5);
+            this.panel5.Size = new System.Drawing.Size(313, 100);
             this.panel5.TabIndex = 2;
             // 
             // comboBox1
@@ -189,10 +186,10 @@
             "Labóratório quimico",
             "Hotel",
             "Síberia"});
-            this.comboBox1.Location = new System.Drawing.Point(4, 32);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(5, 39);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(226, 28);
+            this.comboBox1.Size = new System.Drawing.Size(303, 33);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -200,11 +197,11 @@
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 4);
+            this.label3.Location = new System.Drawing.Point(5, 5);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.label3.Size = new System.Drawing.Size(226, 28);
+            this.label3.Padding = new System.Windows.Forms.Padding(5);
+            this.label3.Size = new System.Drawing.Size(303, 34);
             this.label3.TabIndex = 0;
             this.label3.Text = "Sala ou laboatório";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -214,21 +211,21 @@
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Size = new System.Drawing.Size(234, 81);
+            this.panel4.Padding = new System.Windows.Forms.Padding(5);
+            this.panel4.Size = new System.Drawing.Size(313, 100);
             this.panel4.TabIndex = 1;
             // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(4, 32);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(5, 39);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 26);
+            this.textBox1.Size = new System.Drawing.Size(303, 30);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -236,11 +233,11 @@
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 4);
+            this.label2.Location = new System.Drawing.Point(5, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.label2.Size = new System.Drawing.Size(226, 28);
+            this.label2.Padding = new System.Windows.Forms.Padding(5);
+            this.label2.Size = new System.Drawing.Size(303, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Professor";
             // 
@@ -251,9 +248,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.Color.Maroon;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 72);
+            this.panel2.Size = new System.Drawing.Size(323, 89);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -264,7 +261,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 72);
+            this.label1.Size = new System.Drawing.Size(323, 89);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pesquisar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -274,11 +271,11 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(242, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(323, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.panel7.Size = new System.Drawing.Size(518, 425);
+            this.panel7.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.panel7.Size = new System.Drawing.Size(690, 523);
             this.panel7.TabIndex = 1;
             // 
             // panel8
@@ -286,10 +283,10 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.dataGridView1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(8, 8);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(11, 10);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(502, 409);
+            this.panel8.Size = new System.Drawing.Size(668, 503);
             this.panel8.TabIndex = 0;
             // 
             // dataGridView1
@@ -297,73 +294,52 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.prioridade,
-            this.maquina,
-            this.sala,
-            this.problema,
-            this.professor,
-            this.acoes});
+            this.nomeResponsavel,
+            this.local,
+            this.nivel,
+            this.descricao});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(502, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 503);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // id
+            // nomeResponsavel
             // 
-            this.id.HeaderText = "ID";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
+            this.nomeResponsavel.HeaderText = "professor";
+            this.nomeResponsavel.MinimumWidth = 6;
+            this.nomeResponsavel.Name = "nomeResponsavel";
             // 
-            // prioridade
+            // local
             // 
-            this.prioridade.HeaderText = "Prioridade";
-            this.prioridade.MinimumWidth = 6;
-            this.prioridade.Name = "prioridade";
+            this.local.HeaderText = "Local";
+            this.local.MinimumWidth = 6;
+            this.local.Name = "local";
             // 
-            // maquina
+            // nivel
             // 
-            this.maquina.HeaderText = "Máquina";
-            this.maquina.MinimumWidth = 6;
-            this.maquina.Name = "maquina";
+            this.nivel.HeaderText = "nível";
+            this.nivel.MinimumWidth = 6;
+            this.nivel.Name = "nivel";
             // 
-            // sala
+            // descricao
             // 
-            this.sala.HeaderText = "Sala";
-            this.sala.MinimumWidth = 6;
-            this.sala.Name = "sala";
-            // 
-            // problema
-            // 
-            this.problema.HeaderText = "Problema";
-            this.problema.MinimumWidth = 6;
-            this.problema.Name = "problema";
-            // 
-            // professor
-            // 
-            this.professor.HeaderText = "professor";
-            this.professor.MinimumWidth = 6;
-            this.professor.Name = "professor";
-            // 
-            // acoes
-            // 
-            this.acoes.HeaderText = "Ações";
-            this.acoes.MinimumWidth = 6;
-            this.acoes.Name = "acoes";
+            this.descricao.HeaderText = "Descrição";
+            this.descricao.MinimumWidth = 6;
+            this.descricao.Name = "descricao";
             // 
             // FormConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 425);
+            this.ClientSize = new System.Drawing.Size(1013, 523);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormConsulta";
             this.Text = "FormConsulta";
             this.panel1.ResumeLayout(false);
@@ -400,14 +376,11 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prioridade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maquina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn problema;
-        private System.Windows.Forms.DataGridViewTextBoxColumn professor;
-        private System.Windows.Forms.DataGridViewButtonColumn acoes;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeResponsavel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn local;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nivel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
     }
 }

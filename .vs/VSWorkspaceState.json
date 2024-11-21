@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BDcps",
+    "\\CPSHelpProfessores",
+    "\\CPSHelpProfessores\\CPSHelpProfessores",
+    "\\CPSHelpProfessores\\CPSHelpProfessores\\Forms",
+    "\\WindowsFormsApp2",
+    "\\WindowsFormsApp2\\WindowsFormsApp2"
   ],
-  "SelectedNode": "\\WindowsFormsApp2.sln",
+  "SelectedNode": "\\WindowsFormsApp2\\WindowsFormsApp2.sln",
   "PreviewInSolutionExplorer": false
 }
