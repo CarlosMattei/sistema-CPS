@@ -46,10 +46,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nomeResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.local = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -293,11 +289,6 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeResponsavel,
-            this.local,
-            this.nivel,
-            this.descricao});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -307,30 +298,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(668, 503);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // nomeResponsavel
-            // 
-            this.nomeResponsavel.HeaderText = "professor";
-            this.nomeResponsavel.MinimumWidth = 6;
-            this.nomeResponsavel.Name = "nomeResponsavel";
-            // 
-            // local
-            // 
-            this.local.HeaderText = "Local";
-            this.local.MinimumWidth = 6;
-            this.local.Name = "local";
-            // 
-            // nivel
-            // 
-            this.nivel.HeaderText = "nível";
-            this.nivel.MinimumWidth = 6;
-            this.nivel.Name = "nivel";
-            // 
-            // descricao
-            // 
-            this.descricao.HeaderText = "Descrição";
-            this.descricao.MinimumWidth = 6;
-            this.descricao.Name = "descricao";
             // 
             // FormConsulta
             // 
@@ -342,6 +309,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormConsulta";
             this.Text = "FormConsulta";
+            this.Load += new System.EventHandler(this.FormConsulta_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -378,9 +346,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeResponsavel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn local;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nivel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
     }
 }

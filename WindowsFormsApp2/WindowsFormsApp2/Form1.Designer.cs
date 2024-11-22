@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnHistorico = new System.Windows.Forms.Button();
             this.btnChamados = new System.Windows.Forms.Button();
+            this.btnConsulta = new System.Windows.Forms.Button();
             this.btninicio = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.panelDesktopView = new System.Windows.Forms.Panel();
-            this.btnConsulta = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Padding = new System.Windows.Forms.Padding(4);
             this.panel1.Size = new System.Drawing.Size(289, 562);
             this.panel1.TabIndex = 0;
             // 
@@ -105,6 +106,22 @@
             this.btnChamados.UseVisualStyleBackColor = false;
             this.btnChamados.Click += new System.EventHandler(this.btnChamados_Click);
             // 
+            // btnConsulta
+            // 
+            this.btnConsulta.BackColor = System.Drawing.Color.Black;
+            this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsulta.ForeColor = System.Drawing.Color.White;
+            this.btnConsulta.Location = new System.Drawing.Point(4, 108);
+            this.btnConsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnConsulta.Size = new System.Drawing.Size(281, 58);
+            this.btnConsulta.TabIndex = 6;
+            this.btnConsulta.Text = "Pesquisar";
+            this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta.UseVisualStyleBackColor = false;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click_1);
+            // 
             // btninicio
             // 
             this.btninicio.BackColor = System.Drawing.Color.Black;
@@ -141,7 +158,7 @@
             this.panel3.Location = new System.Drawing.Point(289, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Padding = new System.Windows.Forms.Padding(4);
             this.panel3.Size = new System.Drawing.Size(1016, 50);
             this.panel3.TabIndex = 1;
             // 
@@ -179,22 +196,6 @@
             this.panelDesktopView.TabIndex = 2;
             this.panelDesktopView.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktopView_Paint);
             // 
-            // btnConsulta
-            // 
-            this.btnConsulta.BackColor = System.Drawing.Color.Black;
-            this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsulta.ForeColor = System.Drawing.Color.White;
-            this.btnConsulta.Location = new System.Drawing.Point(4, 108);
-            this.btnConsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.btnConsulta.Size = new System.Drawing.Size(281, 58);
-            this.btnConsulta.TabIndex = 6;
-            this.btnConsulta.Text = "Pesquisar";
-            this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsulta.UseVisualStyleBackColor = false;
-            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -203,6 +204,7 @@
             this.Controls.Add(this.panelDesktopView);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

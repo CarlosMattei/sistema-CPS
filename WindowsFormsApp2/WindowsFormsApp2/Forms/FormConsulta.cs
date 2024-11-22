@@ -93,5 +93,10 @@ namespace WindowsFormsApp2.Forms
         {
 
         }
+
+        private void FormConsulta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
