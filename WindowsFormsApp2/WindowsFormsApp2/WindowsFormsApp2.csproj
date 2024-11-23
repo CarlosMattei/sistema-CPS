@@ -185,5 +185,44 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconamoon--home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uil--search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucide--search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucide--search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\majesticons--home-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mingcute--paper-line %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabler--clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ci--exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic--outline-check-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maki--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maki--arrow %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lets-icons--clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uil--book-open.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

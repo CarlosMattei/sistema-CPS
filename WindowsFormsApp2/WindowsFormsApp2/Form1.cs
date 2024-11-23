@@ -42,11 +42,10 @@ namespace WindowsFormsApp2
         }
 
         */
-
-        private Button currentButton;
-        private Random random;
-        private int tempIndex;
         private Form activeForm;
+        private Button currentActiveButton = null;
+        private readonly Color defaultButtonColor = Color.Black;
+        private readonly Color activeButtonColor = Color.FromArgb(71, 0, 0);
         public Form1()
         {
             InitializeComponent();
@@ -64,12 +63,36 @@ namespace WindowsFormsApp2
             OpenChildForm(new Forms.Home(), sender);
         }
 
+        private void ActivateButton(Button btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currentActiveButton != btnSender)
+                {
+                    DisableButton();
+                    currentActiveButton = btnSender;
+                    currentActiveButton.BackColor = activeButtonColor;
+                }
+            }
+        }
+
+        private void DisableButton()
+        {
+            if (currentActiveButton != null)
+            {
+                currentActiveButton.BackColor = defaultButtonColor;
+            }
+        }
+
+
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             {
                 activeForm.Close();
             }
+
+            ActivateButton(btnSender as Button);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -92,6 +115,7 @@ namespace WindowsFormsApp2
 
         private void btnSair_Click(object sender, EventArgs e)
         {
+            DisableButton();
             FormSair formSair = new FormSair();
 
             formSair.ShowDialog();

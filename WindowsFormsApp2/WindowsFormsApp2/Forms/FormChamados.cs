@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace WindowsFormsApp2.Forms
 {
@@ -100,17 +101,47 @@ namespace WindowsFormsApp2.Forms
             btnColumn.Text = "Finalizar";
             btnColumn.UseColumnTextForButtonValue = true;
             btnColumn.DefaultCellStyle.BackColor = Color.Green; 
-            btnColumn.DefaultCellStyle.ForeColor = Color.WhiteSmoke; 
+            btnColumn.DefaultCellStyle.ForeColor = Color.White;
             btnColumn.FlatStyle = FlatStyle.Flat;
             dataGridView1.Columns.Add(btnColumn);
 
-            dataGridView1.Columns["Descricao"].Width = 500;
+            dataGridView1.Columns["Descricao"].Width = 100;
             dataGridView1.Columns["nomeResponsavel"].Width = 50;
             dataGridView1.Columns["Local"].Width = 80;
             dataGridView1.Columns["Nivel"].Width = 50;
-            dataGridView1.Columns["Acao"].Width = 50;
+            dataGridView1.Columns["Acao"].Width = 60;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersHeight = 50;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Bahnschrift", 15, FontStyle.Bold);
+
+            // Modificações para altura das linhas
+            dataGridView1.RowTemplate.Height = 50;
+            dataGridView1.RowTemplate.MinimumHeight = 50;
+
+            // Aplicar altura em todas as linhas existentes
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                row.Height = 50;
+            }
+
+            // Adicionar evento para manter altura em novas linhas
+            dataGridView1.DataBindingComplete += (sender, e) =>
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    row.Height = 50;
+                }
+            };
+
+            dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.Columns["Descricao"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView1.Columns["Descricao"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
 
 
             dataGridView1.AllowUserToAddRows = false;
