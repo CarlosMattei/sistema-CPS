@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp2.Forms
 {
@@ -114,9 +115,63 @@ namespace WindowsFormsApp2.Forms
 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToResizeRows = false;
+
+            
+        }
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verifica se a coluna clicada é a do botão "Finalizar"
+            if (e.ColumnIndex == dataGridView1.Columns["Acao"].Index && e.RowIndex >= 0)
+            {
+                // Recupera o ID do chamado armazenado na propriedade Tag da linha
+                string idEscolhido = dataGridView1.Rows[e.RowIndex].Tag?.ToString();
+
+                if (string.IsNullOrEmpty(idEscolhido))
+                {
+                    MessageBox.Show("ID do chamado não encontrado.");
+                    return;
+                }
+
+                try
+                {
+                    using (MySqlConnection connection = new MySqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        // Cria as consultas SQL
+                        string query1 = "INSERT INTO chamadosfinalizados (nomeResponsavel, local, nivel, descricao) SELECT nomeResponsavel, local, nivel, descricao FROM chamados WHERE id = @Id";
+                        string query2 = "DELETE FROM chamados WHERE id = @Id";
+
+                        // Executa a primeira consulta
+                        using (MySqlCommand command1 = new MySqlCommand(query1, connection))
+                        {
+                            command1.Parameters.AddWithValue("@Id", idEscolhido);
+                            command1.ExecuteNonQuery();
+                        }
+
+                        // Executa a segunda consulta
+                        using (MySqlCommand command2 = new MySqlCommand(query2, connection))
+                        {
+                            command2.Parameters.AddWithValue("@Id", idEscolhido);
+                            command2.ExecuteNonQuery();
+                        }
+                    }
+
+                    // Remove a linha do DataGridView e exibe uma mensagem de sucesso
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+                    MessageBox.Show("Chamado finalizado com sucesso.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao finalizar o chamado: " + ex.Message);
+                }
+            }
         }
 
 
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
