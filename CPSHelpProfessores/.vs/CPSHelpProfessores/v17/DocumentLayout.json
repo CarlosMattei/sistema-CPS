@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\",
+  "WorkspaceRootPath": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|c:\\users\\logan\\source\\repos\\cps\\cpshelpprofessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|c:\\users\\caiio\\documents\\github\\sistema-cps\\cpshelpprofessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\formnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\sucessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\sucessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\sucessform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F09681-7861-4A80-B1F5-515E404CF703}|CPSHelpProfessores\\CPSHelpProfessores.csproj|solutionrelative:cpshelpprofessores\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,11 +48,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FormNome.cs",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\FormNome.cs",
-              "ToolTip": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
               "RelativeToolTip": "CPSHelpProfessores\\Forms\\FormNome.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAADwvzoAAAAMAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvzQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T10:47:28.982Z",
               "EditorCaption": ""
@@ -61,10 +61,10 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FormNome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\FormNome.cs",
               "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\FormNome.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\FormNome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T10:46:53.939Z"
             },
@@ -72,10 +72,10 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SucessForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\SucessForm.cs",
               "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\SucessForm.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\SucessForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T10:46:59.385Z"
             },
@@ -83,10 +83,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Home.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Forms\\Home.cs",
               "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Forms\\Home.cs [Design]",
+              "RelativeToolTip": "CPSHelpProfessores\\Forms\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T10:46:58.479Z"
             },
@@ -94,9 +94,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Form1.cs",
-              "ToolTip": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
+              "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
               "RelativeToolTip": "CPSHelpProfessores\\Form1.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIA3wBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -106,7 +106,7 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Form1.cs",
               "ToolTip": "C:\\Users\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs [Design]",
               "RelativeToolTip": "..\\..\\..\\..\\..\\Aluno\\Downloads\\cps_sistema\\CPSHelpProfessores\\CPSHelpProfessores\\Form1.cs [Design]",
@@ -117,9 +117,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Program.cs",
               "RelativeDocumentMoniker": "CPSHelpProfessores\\Program.cs",
-              "ToolTip": "C:\\Users\\logan\\source\\repos\\CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Program.cs",
+              "ToolTip": "C:\\Users\\caiio\\Documents\\GitHub\\sistema-CPS\\CPSHelpProfessores\\CPSHelpProfessores\\Program.cs",
               "RelativeToolTip": "CPSHelpProfessores\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
