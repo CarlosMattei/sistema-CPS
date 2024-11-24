@@ -1,91 +1,21 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace WindowsFormsApp2.Forms
 {
     public partial class FormChamados : Form
     {
         string connectionString = "datasource=localhost;username=root;password=;database=projetods4";
+
         public FormChamados()
         {
             InitializeComponent();
             ConfigurarDataGridView();
             CarregarChamados();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void FormChamados_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CarregarChamados()
-        {
-            try
-            {
-                dataGridView1.Rows.Clear();
-
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT * FROM chamados";
-                    MySqlCommand command = new MySqlCommand(query, connection);
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    foreach (DataRow row in dataTable.Rows)
-                    {
-                        int rowIndex = dataGridView1.Rows.Add(
-                            row["nomeResponsavel"].ToString(),
-                            row["local"].ToString(),
-                            row["nivel"].ToString(),
-                            row["descricao"].ToString(),
-                            "Finalizar"
-                        );
-
-                        // Verifica o valor da coluna "Nivel" e define a cor
-                        if (row["nivel"].ToString() == "Médio")
-                        {
-                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Orange;
-                        }
-                        // Você pode adicionar mais condições para outros níveis
-                        else if (row["nivel"].ToString() == "Alto")
-                        {
-                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Red;
-                        }
-                        else if (row["nivel"].ToString() == "Baixo")
-                        {
-                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Green;
-                        }
-                    }
-
-                    if (dataTable.Rows.Count == 0)
-                    {
-                        MessageBox.Show("Nenhum registro encontrado.");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao carregar chamados: " + ex.Message);
-            }
-        }
-
 
         private void ConfigurarDataGridView()
         {
@@ -100,36 +30,41 @@ namespace WindowsFormsApp2.Forms
             btnColumn.HeaderText = "Ação";
             btnColumn.Text = "Finalizar";
             btnColumn.UseColumnTextForButtonValue = true;
-            btnColumn.DefaultCellStyle.BackColor = Color.Green; 
+            btnColumn.DefaultCellStyle.BackColor = Color.Green;
             btnColumn.DefaultCellStyle.ForeColor = Color.White;
             btnColumn.FlatStyle = FlatStyle.Flat;
             dataGridView1.Columns.Add(btnColumn);
 
+            ConfigurarAparenciaDataGridView();
+            dataGridView1.CellClick += DataGridView1_CellClick;
+        }
+
+        private void ConfigurarAparenciaDataGridView()
+        {
             dataGridView1.Columns["Descricao"].Width = 100;
             dataGridView1.Columns["nomeResponsavel"].Width = 50;
             dataGridView1.Columns["Local"].Width = 80;
             dataGridView1.Columns["Nivel"].Width = 50;
             dataGridView1.Columns["Acao"].Width = 60;
+
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(224, 224, 224);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Bahnschrift", 15, FontStyle.Bold);
             dataGridView1.ColumnHeadersHeight = 50;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Bahnschrift", 15, FontStyle.Bold);
 
-            // Modificações para altura das linhas
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToResizeRows = false;
+
             dataGridView1.RowTemplate.Height = 50;
             dataGridView1.RowTemplate.MinimumHeight = 50;
 
-            // Aplicar altura em todas as linhas existentes
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                row.Height = 50;
-            }
+            dataGridView1.Columns["Descricao"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView1.Columns["Descricao"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
-            // Adicionar evento para manter altura em novas linhas
             dataGridView1.DataBindingComplete += (sender, e) =>
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -137,72 +72,106 @@ namespace WindowsFormsApp2.Forms
                     row.Height = 50;
                 }
             };
-
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.Columns["Descricao"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            dataGridView1.Columns["Descricao"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-
-
-
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToResizeRows = false;
-
-            
         }
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifica se a coluna clicada é a do botão "Finalizar"
             if (e.ColumnIndex == dataGridView1.Columns["Acao"].Index && e.RowIndex >= 0)
             {
-                // Recupera o ID do chamado armazenado na propriedade Tag da linha
-                string idEscolhido = dataGridView1.Rows[e.RowIndex].Tag?.ToString();
+                var row = dataGridView1.Rows[e.RowIndex];
+                string nomeResponsavel = row.Cells["nomeResponsavel"].Value.ToString();
+                string local = row.Cells["Local"].Value.ToString();
+                string nivel = row.Cells["Nivel"].Value.ToString();
+                string descricao = row.Cells["Descricao"].Value.ToString();
 
-                if (string.IsNullOrEmpty(idEscolhido))
-                {
-                    MessageBox.Show("ID do chamado não encontrado.");
-                    return;
-                }
-
+                MySqlConnection Conexao = null;
                 try
                 {
-                    using (MySqlConnection connection = new MySqlConnection(connectionString))
-                    {
-                        connection.Open();
+                    // Primeiro, inserir na tabela chamadosfinalizados
+                    Conexao = new MySqlConnection(connectionString);
+                    string sqlInsert = "INSERT INTO chamadosfinalizados (nomeResponsavel, local, nivel, descricao) VALUES (@nomeResponsavel, @local, @nivel, @descricao)";
+                    MySqlCommand cmdInsert = new MySqlCommand(sqlInsert, Conexao);
 
-                        // Cria as consultas SQL
-                        string query1 = "INSERT INTO chamadosfinalizados (nomeResponsavel, local, nivel, descricao) SELECT nomeResponsavel, local, nivel, descricao FROM chamados WHERE id = @Id";
-                        string query2 = "DELETE FROM chamados WHERE id = @Id";
+                    cmdInsert.Parameters.AddWithValue("@nomeResponsavel", nomeResponsavel);
+                    cmdInsert.Parameters.AddWithValue("@local", local);
+                    cmdInsert.Parameters.AddWithValue("@nivel", nivel);
+                    cmdInsert.Parameters.AddWithValue("@descricao", descricao);
 
-                        // Executa a primeira consulta
-                        using (MySqlCommand command1 = new MySqlCommand(query1, connection))
-                        {
-                            command1.Parameters.AddWithValue("@Id", idEscolhido);
-                            command1.ExecuteNonQuery();
-                        }
+                    Conexao.Open();
+                    cmdInsert.ExecuteNonQuery();
 
-                        // Executa a segunda consulta
-                        using (MySqlCommand command2 = new MySqlCommand(query2, connection))
-                        {
-                            command2.Parameters.AddWithValue("@Id", idEscolhido);
-                            command2.ExecuteNonQuery();
-                        }
-                    }
+                    // Depois, deletar da tabela chamados
+                    string sqlDelete = "DELETE FROM chamados WHERE nomeResponsavel = @nomeResponsavel AND local = @local AND nivel = @nivel AND descricao = @descricao";
+                    MySqlCommand cmdDelete = new MySqlCommand(sqlDelete, Conexao);
 
-                    // Remove a linha do DataGridView e exibe uma mensagem de sucesso
+                    cmdDelete.Parameters.AddWithValue("@nomeResponsavel", nomeResponsavel);
+                    cmdDelete.Parameters.AddWithValue("@local", local);
+                    cmdDelete.Parameters.AddWithValue("@nivel", nivel);
+                    cmdDelete.Parameters.AddWithValue("@descricao", descricao);
+
+                    cmdDelete.ExecuteNonQuery();
+
+                    // Remover a linha do DataGridView
                     dataGridView1.Rows.RemoveAt(e.RowIndex);
-                    MessageBox.Show("Chamado finalizado com sucesso.");
+                    MessageBox.Show("Chamado finalizado com sucesso!");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao finalizar o chamado: " + ex.Message);
                 }
+                finally
+                {
+                    if (Conexao != null && Conexao.State == ConnectionState.Open)
+                    {
+                        Conexao.Close();
+                    }
+                }
             }
         }
 
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void CarregarChamados()
         {
+            MySqlConnection Conexao = null;
+            try
+            {
+                dataGridView1.Rows.Clear();
+                Conexao = new MySqlConnection(connectionString);
+                string sql = "SELECT * FROM chamados";
+                MySqlCommand comando = new MySqlCommand(sql, Conexao);
+                Conexao.Open();
 
+                MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    int rowIndex = dataGridView1.Rows.Add(
+                        row["nomeResponsavel"].ToString(),
+                        row["local"].ToString(),
+                        row["nivel"].ToString(),
+                        row["descricao"].ToString(),
+                        "Finalizar"
+                    );
+
+                }
+
+                if (dataTable.Rows.Count == 0)
+                {
+                    MessageBox.Show("Nenhum registro encontrado.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar chamados: " + ex.Message);
+            }
+            finally
+            {
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+                }
+            }
         }
     }
 }

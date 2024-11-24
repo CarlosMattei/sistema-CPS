@@ -21,15 +21,47 @@ namespace WindowsFormsApp2.Forms
             CarregarChamadosFinalizados();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ConfigurarDataGridView()
         {
+            dataGridView1.Columns.Clear();
 
+            // Configurar colunas
+            dataGridView1.Columns.Add("nomeResponsavel", "Responsável");
+            dataGridView1.Columns.Add("Local", "Local");
+            dataGridView1.Columns.Add("Nivel", "Nível");
+            dataGridView1.Columns.Add("Descricao", "Descrição");
+
+            // Configurar larguras das colunas
+            dataGridView1.Columns["Descricao"].Width = 400;
+            dataGridView1.Columns["nomeResponsavel"].Width = 100;
+            dataGridView1.Columns["Local"].Width = 100;
+            dataGridView1.Columns["Nivel"].Width = 80;
+
+            // Configurar estilos
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(224, 224, 224);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Bahnschrift", 12, FontStyle.Bold);
+            dataGridView1.ColumnHeadersHeight = 40;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.RowTemplate.Height = 50;
+            dataGridView1.RowTemplate.MinimumHeight = 50;
+
+            // Configurar células
+            dataGridView1.Columns["Descricao"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView1.Columns["Descricao"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+            // Configurações gerais
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.RowTemplate.Height = 40;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         private void CarregarChamadosFinalizados()
         {
             try
@@ -51,68 +83,52 @@ namespace WindowsFormsApp2.Forms
                             row["nomeResponsavel"].ToString(),
                             row["local"].ToString(),
                             row["nivel"].ToString(),
-                            row["descricao"].ToString(),
-                            "Finalizar"
+                            row["descricao"].ToString()
                         );
 
-                        // Verifica o valor da coluna "Nivel" e define a cor
+                        // Aplicar cores baseadas no nível
                         if (row["nivel"].ToString() == "Médio")
                         {
                             dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Orange;
+                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.ForeColor = Color.White;
                         }
-                        // Você pode adicionar mais condições para outros níveis
                         else if (row["nivel"].ToString() == "Alto")
                         {
                             dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Red;
+                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.ForeColor = Color.White;
                         }
                         else if (row["nivel"].ToString() == "Baixo")
                         {
                             dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.BackColor = Color.Green;
+                            dataGridView1.Rows[rowIndex].Cells["Nivel"].Style.ForeColor = Color.White;
+                        }
+
+                        // Aplicar estilo alternado nas linhas para melhor visualização
+                        if (rowIndex % 2 == 0)
+                        {
+                            dataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.FromArgb(250, 250, 250);
                         }
                     }
 
                     if (dataTable.Rows.Count == 0)
                     {
-                        MessageBox.Show("Nenhum registro encontrado.");
+                        MessageBox.Show("Nenhum chamado finalizado encontrado.", "Histórico",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar chamados: " + ex.Message);
+                MessageBox.Show("Erro ao carregar histórico de chamados: " + ex.Message, "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-
-        private void ConfigurarDataGridView()
+        // Opcional: Adicionar método para atualizar a lista
+        public void AtualizarHistorico()
         {
-            dataGridView1.Columns.Clear();
-            dataGridView1.Columns.Add("nomeResponsavel", "Responsável");
-            dataGridView1.Columns.Add("Local", "Local");
-            dataGridView1.Columns.Add("Nivel", "Nível");
-            dataGridView1.Columns.Add("Descricao", "Descrição");
-
-            DataGridViewButtonColumn btnColumn = new DataGridViewButtonColumn();
-            btnColumn.Name = "Acao";
-            btnColumn.HeaderText = "Ação";
-            btnColumn.Text = "Finalizar";
-            btnColumn.UseColumnTextForButtonValue = true;
-            btnColumn.DefaultCellStyle.BackColor = Color.Green;
-            btnColumn.DefaultCellStyle.ForeColor = Color.WhiteSmoke;
-            btnColumn.FlatStyle = FlatStyle.Flat;
-            dataGridView1.Columns.Add(btnColumn);
-
-            dataGridView1.Columns["Descricao"].Width = 500;
-            dataGridView1.Columns["nomeResponsavel"].Width = 50;
-            dataGridView1.Columns["Local"].Width = 80;
-            dataGridView1.Columns["Nivel"].Width = 50;
-            dataGridView1.Columns["Acao"].Width = 50;
-            dataGridView1.Columns["Descricao"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            dataGridView1.Columns["Descricao"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-
-
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToResizeRows = false;
+            CarregarChamadosFinalizados();
         }
+
     }
 }
