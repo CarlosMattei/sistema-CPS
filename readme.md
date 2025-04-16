@@ -1,6 +1,5 @@
 # CPSHelp
 
-![Descrição da imagem](https://freeimage.host/i/2RrBvtV)
 
 ## O que é?
 
@@ -17,6 +16,11 @@ O aplicativo para professores é instalado na máquina dos laboratórios, dando 
 Auxiliar docente:
 
 O app para auxiliares docentes é instalando apenas na máquina do auxiliar, assim, ele tem uma visão geral dos chamados de cada laboratório.
+
+## Programadores:
+
+Carlos Henrique Mattei (Designer e Frontend), https://github.com/CarlosMattei
+Caio Costa (Backend), https://github.com/CaioCosta2JZ
 
 ## Tecnologias
 
