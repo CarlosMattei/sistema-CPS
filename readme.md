@@ -20,6 +20,7 @@ O app para auxiliares docentes é instalando apenas na máquina do auxiliar, ass
 ## Programadores:
 
 Carlos Henrique Mattei (Designer e Frontend), https://github.com/CarlosMattei
+
 Caio Costa (Backend), https://github.com/CaioCosta2JZ
 
 ## Tecnologias
